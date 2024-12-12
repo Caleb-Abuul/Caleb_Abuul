@@ -1,0 +1,61 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  min-height: 500px;
+  gap: 40px;
+  .imgWrap {
+    position: relative;
+    .user {
+      display: 400px;
+    }
+    .themeChange {
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    span {
+      display: flex;
+      gap: 30px;
+      a {
+        img {
+          width: 40px;
+        }
+      }
+    }
+    .desc {
+      width: 24ch;
+      align-self: center;
+      text-align: center;
+    }
+    a {
+      width: fit-content;
+      button {
+        background-color: var(--btn-clr);
+        color: var(--btn-text-clr);
+        border: none;
+        border-radius: 20px;
+        width: 200px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      button:active {
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+        transform: scale(1.05);
+      }
+    }
+  }
+}

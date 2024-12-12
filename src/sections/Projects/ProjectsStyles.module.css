@@ -1,0 +1,29 @@
+.projectContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .projectTitle {
+    margin-bottom: 30px;
+  }
+  a {
+    width: fit-content;
+    align-self: center;
+    text-decoration: none;
+    .card {
+      max-width: 250px;
+      background-color: var(--project-card-bg);
+      border-radius: 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: box-shadow 500ms ease-in-out, transform 500ms ease-in-out;
+    }
+    .card:hover {
+      box-shadow: 0 0 0 3px rgba(43, 120, 219, 0.15);
+      transform: scale(1.05);
+    }
+    h3,
+    p {
+      text-align: left;
+    }
+  }
+}
