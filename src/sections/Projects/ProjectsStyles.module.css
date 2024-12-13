@@ -2,11 +2,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  .projectTitle {
-    margin-bottom: 30px;
-  }
+  gap: 40px;
   a {
     width: fit-content;
+
     align-self: center;
     text-decoration: none;
     .card {
