@@ -62,7 +62,6 @@ function Skills() {
             </span>
             
         </div>
-        <hr />
 
 
     </section>
